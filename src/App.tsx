@@ -7,7 +7,7 @@ import Gallery from './components/sections/Gallery';
 import Services from './components/sections/Services';
 import Contact from './components/sections/Contact';
 
-function App() {
+const App: React.FC = () => {
   useEffect(() => {
     document.title = 'Un Nuevo Día | Fundación';
   }, []);
