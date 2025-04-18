@@ -25,19 +25,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) =
 const Services: React.FC = () => {
   const services = [
     {
-      icon: <BookOpen size={24} />,
-      title: 'Programas Educativos',
-      description: 'Ofrecemos apoyo académico, talleres de desarrollo de habilidades y recursos educativos para niños y jóvenes.'
-    },
-    {
       icon: <Heart size={24} />,
       title: 'Asistencia Médica',
       description: 'Proporcionamos acceso a servicios médicos básicos, medicamentos y educación sobre salud preventiva.'
-    },
-    {
-      icon: <Home size={24} />,
-      title: 'Vivienda Temporal',
-      description: 'Facilitamos alojamiento seguro y temporal para personas en situación de vulnerabilidad.'
     },
     {
       icon: <Users size={24} />,
@@ -59,7 +49,7 @@ const Services: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <ServiceCard
               key={index}
