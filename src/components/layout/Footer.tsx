@@ -1,11 +1,11 @@
 import React from 'react';
-import { Heart, Mail, Phone, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Heart, Facebook, Instagram, Twitter } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white pt-12 pb-6">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Heart className="text-[#1860ff]" />
@@ -27,25 +27,8 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Contacto</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start space-x-3">
-                <MapPin size={18} className="text-[#1860ff] flex-shrink-0 mt-1" />
-                <span className="text-gray-400">Calle Principal #123, Ciudad, País</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Phone size={18} className="text-[#1860ff] flex-shrink-0" />
-                <span className="text-gray-400">+123 456 7890</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Mail size={18} className="text-[#1860ff] flex-shrink-0" />
-                <span className="text-gray-400">info@unnuevodia.org</span>
-              </li>
-            </ul>
-          </div>
 
-          <div>
+          <div className="text-center">
             <h3 className="font-semibold text-lg mb-4">Enlaces Rápidos</h3>
             <ul className="space-y-2">
               {['Inicio', 'Nosotros', 'Galería', 'Servicios', 'Contacto'].map((item) => (
